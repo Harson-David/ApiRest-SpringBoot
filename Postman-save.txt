@@ -1,0 +1,76 @@
+Todos estan en formato JSON
+
+
+
+
+
+customer
+
+{
+    "idCustomerDto": 6,
+    "nameDto": "Nuevo Cliente",
+    "addressDto": "123 Calle Principal, Ciudad",
+    "emailDto": "nuevo.cliente@example.com",
+    "phoneNumberDto": "555-6789",
+    "idOrder": 7,
+    "date": "2023-06-30T10:00:00",
+    "total": 0.0,
+    "method": "E",
+    "additionalNotes": "Sin especificaciones"
+}
+
+
+
+
+Pizza
+
+
+{
+    "idPizzaDto": 7,
+    "names": "Jamon and cheese",
+    "descriptions": "Spicy jamon with delicious cheese in pizzas",
+    "prices": 7.0,
+    "vegetarians": false,
+    "vegans": false,
+    "availables": true,
+    "itemsPizzas": []
+}
+
+
+
+PizzaOrder
+
+
+{
+    "idPizzaOrderDto": 6,
+    "idCustomers": 6,
+    "date": "2024-06-27T16:55:00",
+    "total": 45.0,
+    "methods": "C",
+    "additionalNotes": "Gluten-free crust",
+    "itemsOrders": null,
+    "customers": {
+        "idCustomer": 6
+    }
+}
+
+
+ItemsOrders
+
+
+{
+    "idItemDto": 6,
+    "idOrders": 5,
+    "idPizzas": 6,
+    "quantity": 8.0,
+    "prices": 24.0,
+    "pizzaOrders": {
+        "idOrder": 6,
+        "idCustomer": 6
+    },
+    "pizzas": {
+        "idPizza": 6
+    }
+}
+
+

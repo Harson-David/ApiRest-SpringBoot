@@ -1,0 +1,84 @@
+Formato JSON
+
+
+Customer
+
+
+{
+    "idPizzaOrderDto": 6,
+    "idCustomers": 6,
+    "date": "2024-06-27T16:55:00",
+    "total": 45.0,
+    "methods": "C",
+    "additionalNotes": "Gluten-free crust",
+    "itemsOrders": null,
+    "customers": {
+        "idCustomer": 6
+    }
+}
+
+
+
+Pizza
+
+
+{
+    "idPizzaDto": 2,
+    "names": "Pepperoni",
+    "descriptions": "Spicy pepperoni pizzas",
+    "prices": 7.0,
+    "vegetarians": true,
+    "vegans": false,
+    "availables": true,
+    "itemsPizzas": []
+}
+
+
+
+PizzaOrder
+
+{
+    "idPizzaOrderDto": 2,
+    "idCustomers": 2,
+    "date": "2024-05-11T13:45:00",
+    "total": 23.0,
+    "methods": "E",
+    "additionalNotes": "Gluten-free crust",
+    "itemsOrders": null,
+    "customers": {
+        "idCustomer": 2,
+        "name": "Jane Smith",
+        "address": "456 Elm St, Rivertown",
+        "email": "jane.smith@example.com",
+        "phoneNumber": "55532323434"
+    }
+}
+
+
+ItemsOrder
+
+
+{
+    "idItemDto": 4,
+    "idOrders": 3,
+    "idPizzas": 1,
+    "quantity": 10.0,
+    "prices": 42.0,
+    "pizzaOrders": {
+        "idOrder": 3,
+        "idCustomer": 3,
+        "date": "2024-05-12T15:00:00",
+        "total": 260.0,
+        "method": "C",
+        "aditionalNotes": "No onions on any pizza"
+    },
+    "pizzas": {
+        "idPizza": 4,
+        "name": "Vegetarian",
+        "description": "Mixed vegetables pizza",
+        "price": 11.0,
+        "vegeterian": true,
+        "vegan": true,
+        "available": true
+    }
+}
